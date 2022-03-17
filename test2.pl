@@ -90,8 +90,8 @@ $graph->set(
 
 $graph->set(
         y_max_value       => ($data->get_min_max_y_all( ))[1]+25,
-        y_tick_number     => 10,
-        y_all_ticks       => 1,
+        y_tick_number     => 1,
+        y_all_ticks       => 0,
         y_number_format   => sub { ''.int(shift); },
 );
 

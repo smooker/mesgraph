@@ -16,13 +16,12 @@ my $chart = Chart::Gnuplot->new(
 #./SLED_PODMIANA/start1.csv
 
 ## Create dataset object and specify the properties of the dataset
-#my $dataSet = Chart::Gnuplot::DataSet->new(
-#    xdata => \@x,
-#    ydata => \@y,
-#    title => "Plotting a line from Perl arrays",
-#    style => "linespoints",
-#    ....
-#);
+my $dataSet = Chart::Gnuplot::DataSet->new(
+    xdata => \@x,
+    ydata => \@y,
+    title => "Plotting a line from Perl arrays",
+    style => "linespoints",
+);
  
 # Plot the data set on the chart
 $chart->plot2d($dataSet);

@@ -8,7 +8,7 @@ sub create_graph {
     open my $plot => "| /usr/bin/gnuplot"
         or die "Failed to open pipe: $!\n";
 
-    my $outfile = "/tmp/graph.png";
+    my $outfile = "./graph.png";
     print $plot <<"--";
     print GPVAL_TERMINALS
 
